@@ -1,0 +1,4 @@
+CREATE DATABASE mattermost;
+CREATE USER mmuser WITH PASSWORD 'your_password_here';
+GRANT ALL PRIVILEGES ON DATABASE mattermost to mmuser;
+\q
