@@ -3,7 +3,7 @@ MAINTAINER Arthur Gilly "ag15@sanger.ac.uk"
 
 RUN apt-get update
 RUN sed -i "s/^exit 101$/exit 0/" /usr/sbin/policy-rc.d
-RUN apt-get install -y postgresql postgresql-contrib wget nano sudo sponge
+RUN apt-get install -y postgresql postgresql-contrib wget nano sudo moreutils
 
 RUN service postgresql restart
 COPY sql.commands /
